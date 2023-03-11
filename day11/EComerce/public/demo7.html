@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Web Storage Demo App</title>
+    </head>
+
+    <body>
+        <h2> Showing Existing Customer Details</h2>
+         
+        <label>First Name</label> :
+        <p id="firstname"></p>
+        <label>Last Name</label> :
+        <p id="lastname"></p>
+        <label>Email</label> :
+        <p id="email"></p>
+        
+        
+        <button onclick="onGetDetails()">Retrive Customer Details</button>
+        <script>
+            function onGetDetails(){  
+                if(typeof(Storage)!=="undefined"){
+                    let strCustomer=localStorage.getItem("customer");
+                    let retrivedCustomer=JSON.parse(strCustomer);
+
+                    let firstname=document.getElementById("firstname");  rxd5zawa      
+                    let lastname=document.getElementById("lastname");
+                    let email=document.getElementById("email");
+
+                    firstname.innerHTML=retrivedCustomer.firstname;
+                    lastname.innerHTML=retrivedCustomer.lastname;
+                    email.innerHTML=retrivedCustomer.email;
+
+                }
+            };
+        </script>
+
+    </body>
+</html>

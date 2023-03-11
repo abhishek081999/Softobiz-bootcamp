@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>  
+    </head>
+    <body>
+
+
+
+    <button onclick="onButtonClick()"></button>
+
+    <P id="para1"></P>
+
+    <script>
+
+
+//(()=>{})() 
+
+    const timer=( function (){
+
+        console.log("outer function is getting invoked.......");
+
+            let  count=0;  // this variable is behaving like private varaible
+
+            console.log( "result="+ count);
+
+            return function (){
+
+                    count+=1;  
+
+                    console.log("inner function is getting invoked...");
+
+                    console.log( "inner function result="+ count);
+
+                    return count;  
+
+            }
+
+        })();
+
+   
+
+    var onButtonClick=function(){
+
+        let paraElement=document.getElementById("para1");
+
+        paraElement.innerHTML=timer();
+
+    }
+
+    </script>
+
+</body>
+</html>>

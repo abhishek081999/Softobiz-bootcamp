@@ -1,0 +1,300 @@
+
+JSON object
+JSON Array
+	  push
+File I/O  : read and write content from file
+
+JSON.stringify
+JSON.parse
+jsonobject.toString()
+console.log
+event.on
+event.emit
+fs.readFile
+fs.writeFile
+setInterval
+new EventEmitter()
+
+Keyword
+require
+new
+if else
+function
+()=> {}
+var
+exports
+return
+
+
+Week 2:
+ 5 times more than last week learning
+
+
+Language Skill:
+	keyword, Rules , Grammer    vocablury
+	
+
+MEAN STack:
+	Javascript language
+	Node JS
+	Lot of inbuilt functions, inbuilt modules (packages)
+		syntax for calling those functions
+		Callback mechanism
+
+ECommerce Solution.
+
+	Week 1: Agenda
+		Project based learning approach
+		Functional Programming
+		Modularity: banking module, Taxation, handler, IO
+		baiscs of functions
+		using inbuilt functions
+		writing custom functions
+		Writing real world entities using inner function as well as outer function
+		Fullstack Application Development
+		Basics of javascript
+		File I/O
+		Event Driven mechanism
+		Solution , Project , Modules
+		Node Js Bascis
+		installing, configuring Node JS
+		V8 Javascript Engine
+		
+	Agenda: ( Week 2)
+		Web Application Development using Javascript at server side
+		inbuilt modules  http ( containes set of inbuilt functions) 
+		express-------Web Application Framework
+		Tool npm (node package manager)
+		node_modules
+		Javascript 
+		HTML 5.0 features
+		Dynamic Web pages for Web Application using DOM ( Document Object Model)
+		Advanced features of Javascript programming
+		Server Side Javascript programming
+		Client Side Javascript programming
+		Database connectivity using server Side javascript
+
+
+
+
+	Agenda: (Week 3)
+		Front End Application Development using Angular
+		Component based UI Development
+		....
+		....
+
+	till 23 rd May
+
+
+
+_______________________________________________________________________________________________________________
+
+	Week 2:
+		Building Online Shopping Web Application as Fullstack Solution
+		 HTML,
+		 CSS,
+		 Client Side Javascript Programming
+		 Build HTTP server
+		 Perform Request processing, 
+			 Response Generation,
+			 handling server Side Task from online Shopping Application 
+
+							Shopping Cart
+							Order processing
+							Product Catalog
+							Authentication and Authorization
+							Customer Relationship management
+							Delivery Tracking 
+							State Management
+							Payment Processing 
+
+		Take advantage of Client Side Programming
+					Canvas
+					Localstorage
+					Sessionstorage
+					handling cookies, Querystring
+					DOM PRogramming
+					jQuery for Dyanmic Web Page managment
+		
+		Use Responsive UI Framework to build Professional , Rich UI Client Web Application for Online Shopping
+
+
+
+
+	Akhand Pratap-----start from BackEnd
+	Sourv-------------start from BackEnd
+	Ganesh R----------start from server side task
+	Abhishek K--------start from server side
+	
+
+	ECommerce Solution: come up with working model
+
+				Create a simple Web Application accessible using url.
+	
+	Customer :
+						     some Request processing logic
+						     some response generation logic
+						     transporting response back to EndUser
+	URl-----------------network------------------server
+
+
+	Agile Methodology:		
+		
+		Incremental , Iterative Software Development process
+		Spiral Model
+
+		
+		
+	We use scrum
+
+		Product Backlog-
+				User stories
+					(small tasks)
+					List down tasks
+						1.Create a simple HTTP server
+						2.Add some basic html pages to show product list
+						3.Add some basic html page to show product detail.
+						4.Add some basic html page to validate existing customer.
+						5.Add some functionality to register new customer
+						...................
+						...................
+
+						100 . deploy finsihed online shopping web site for customer acceptance
+
+				
+					
+
+	Sprint: (duration: 2 hours)
+		Sprint Backlog 
+			
+
+				
+		Sprint meeting:
+			(stand up meeting)
+	
+	Release:
+
+	 CI/ CD:
+
+
+		Culture
+		Continuous integration/continuous delivery --------------------software development
+		Continous learning-------------------------------------------  software develoeper
+
+	 Integration
+	 Testing
+	 Deployment
+	 Support (Maintainance)
+	 Zero Defect Product
+
+
+
+
+
+
+Ex:
+
+1.Create aboutus.html,  contact.html , services.html in existing web application
+2.Write a response generation code which will read url and send respective html contnet to browser based  endusers  choice.
+
+	
+
+http://localhost:9090/services.html?username=ravitambade
+
+
+
+http  ------------> protocol of request
+
+localhost --------> name of server 
+		    ip address of server
+
+services.html -----> requested html file
+
+?username=ravitambade  ---->Query string
+
+
+What is Web Application ?
+	Web Application is hosted on Web server.
+	ECommerce Application is hosted on HTTP Server listening on port 9090.
+	ECommerce Application host static web pages such as index.html, about.html, contact.html
+	ECommerce Applicatoin also host simple web api (web service ) which gets json data as response.
+	ECommerce Application consist of Web Content:
+						static web pages as well as data at server side.
+
+	HTML pages contents are sent back to Browser. 
+	Browser is resposible for rendering HTML content with the help of HTML rendering Engine available inside.
+
+
+Simple Coding Practices
+Javascript Programming
+Web Application Development Basics 
+
+
+	Static Web Page------index.html, about.html, contact.html  ( they only consist of output)
+	Dynamic Web page-----login.html, register.html		  ( they contain form which would allow enduser to interact)
+
+
+Add  login and register web pages to  ECommerce Web Application
+
+_____________________________________________________________________________________________________________________________________________________________________
+
+FullStack Application Programming:
+
+
+Client Side Javascript PRogramming ( Front End Programming)
+	( HTML, CSS, DOM, Bootstrap)
+	(jQuery, Javascript UI Frameworks: Angular, React , Vue)
+	Control event handling
+	Page load event handling
+	Dynamic content rendering at client side (browser)
+	DOM manipulation
+	Accessing remote data 
+	Posting  data to remote server
+	Manging Rich User interface of front End
+
+
+
+Server Side Javascript Programming (Back End Programming)   (Node JS Programming)
+	Request Processing
+	Response generation
+	Authentication & Authorization
+	Personalization
+	Database Connectivity
+	State Management ( session, cookies creation)
+	Multilingual support (Localization)
+	HTTP Pipeline ( handling middleware) ( intercepting incomming request ,.
+					       filtering incomming request)
+
+Data management:
+	RDBMS:
+		Database management System
+		DDL	
+		DCL
+		DML
+	NQ SQL:
+		MongoDB Data Management
+			collections,
+			documents,
+			 CRUD Operations
+
+	JSON File:
+		products.json
+		hello.txt files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

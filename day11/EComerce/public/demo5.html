@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Use of Namespaces in Javascript</title>
+    </head>
+    <body>
+
+        <h1> Client Side namespace defining.......</h1>
+
+        <script>
+            // namespaces 
+            window.Transflower=window.Transflwoer || {};
+            window.Transflower.HR=window.Transflower.HR || {};
+            window.Transflower.Training=window.Transflower.Training ||{}
+
+            Transflower.HR.Employees=[
+            {'Id':1, 'FirstName':'Ravi', 'LastName':'Tambade', 'Email':'ravi.tambade@transflower.in', 'Phone':'9881735801', 'Adress':'Pune'},
+            { 'Id': 2, 'FirstName': 'Rahul', 'LastName': 'Sharma', 'Email': 'rahul.sharma@transflower.in', 'Phone': '9881735506', 'Address': 'Mumbai' },
+            { 'Id': 3, 'FirstName': 'Kiran', 'LastName': 'Jadhav', 'Email': 'kiran.jadhav@transflower.in', 'Phone': '9881735341', 'Address': 'Chennai' },
+            { 'Id': 4, 'FirstName': 'Seeta', 'LastName': 'More', 'Email': 'seeta.more@transflower.in', 'Phone': '9881735609', 'Address': 'Delhi' },
+            { 'Id': 5, 'FirstName': 'Sweta', 'LastName': 'Bhor', 'Email': 'sweta.bhor@transflower.in', 'Phone': '9881734651', 'Address': 'Indore' },
+            { 'Id': 6, 'FirstName': 'Ramesh', 'LastName': 'Shinde', 'Email': 'ramesh.sinde@transflower.in', 'Phone': '9881735871', 'Address': 'Bhopal' },
+            { 'Id': 7, 'FirstName': 'Chirag', 'LastName': 'Varma', 'Email': 'chirag.varma@transflower.in', 'Phone': '9881735706', 'Address': 'Surat' },
+            { 'Id': 8, 'FirstName': 'Ganesh', 'LastName': 'Gore', 'Email': 'ganesh.gore@transflower.in', 'Phone': '9881735381', 'Address': 'Karad' },
+            { 'Id': 9, 'FirstName': 'Aarush', 'LastName': 'Nene', 'Email': 'akash.nene@transflower.in', 'Phone': '9881735706', 'Address': 'Bengaluru' },
+            { 'Id': 10, 'FirstName': 'Varun', 'LastName': 'Kale', 'Email': 'varun.kale@transflower.in', 'Phone': '9881735846', 'Address': 'Kolhapur' },
+            { 'Id': 11, 'FirstName': 'Sameer', 'LastName': 'Kulkarni', 'Email': 'sameer.kulkarni@transflower.in', 'Phone': '9881735852', 'Address': 'Pune' },
+            { 'Id': 12, 'FirstName': 'Reema', 'LastName': 'More', 'Email': 'reema.more@transflower.in', 'Phone': '9881746829', 'Address': 'Satara' },
+            { 'Id': 13, 'FirstName': 'Ojas', 'LastName': 'Tambade', 'Email': 'ojas.tambade@transflower.in', 'Phone': '9881685371', 'Address': 'Sangali' }
+
+            ];
+
+
+            Transflower.Training.Students=[
+            {'Id':1, 'FirstName':'Vivek', 'LastName':'Sawant', 'Email':'vivek.sawant@gmail.com', 'Phone':'9881765401', 'Adress':'Mumbai'},
+            {'Id':2, 'FirstName':'Shiv', 'LastName':'Kumar', 'Email':'shiv.kumar@gmail.com', 'Phone':'9881765401', 'Adress':'Mumbai'},
+           
+            ];
+
+            console.log(window.Transflower.HR.Employees);
+
+            console.log(window.Transflower.Training.Students);
+
+
+        </script>
+    </body>
+</html>

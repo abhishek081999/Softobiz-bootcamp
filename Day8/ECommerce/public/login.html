@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <img src ="/images/g.jpg"width="100" height="100"/>
+       <title>Login Web page</title>
+       <link rel="stylesheet" href="./styles/style.css">
+       <script src="./scripts/app.js"></script>
+       <!--internal style-->
+       
+       <!--<style>
+        label{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         font-style: italic;
+         font-weight: bold;
+         color:darkmagenta
+        }
+        </style>---> 
+   </head> 
+   <body>
+       <!--inline style-->
+    <h1 style="color: maroon">Transflower Store </h1>
+    <hr/>
+    <h3 style="color: darkblue">Sign In</h3>
+    <br/>
+        <table>
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type="email" name="email" id="email" value="ravi.tambade@transflower.in" required placeholder="Enter your email here"/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="password"  placeholder="Enter your password here" required /></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button"   id="btnlogin" value="login" onclick="validate()"/></td>
+            </tr>
+           </table>
+           <a href="/forgotpassword.html">Forgot Password </a> | <a href="/register.html">New Customer</a>
+           <!--Inline css-->
+           <p id="status" style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                   font-style:italic;
+                                    font-weight: bold;"> Welcome to Transflower</p>
+   </body>
+</html>

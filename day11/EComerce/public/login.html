@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <img src ="/images/rose.jpg"width="100" height="100"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <title>Login Web page</title>
+       
+      
+       <script src="./scripts/app.js"></script>
+       <!--internal style-->
+       
+       <!--<style>
+        label{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         font-style: italic;
+         font-weight: bold;
+         color:darkmagenta
+        }
+        </style>---> 
+   </head> 
+   <body>
+       <!--inline style-->
+    <h1 style="color: maroon">Transflower Store </h1>
+    <hr/>
+    <h3 style="color: darkblue">Sign In</h3>
+    <br/>
+        <table>
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type="email" name="email" id="email" value="ravi.tambade@transflower.in" required placeholder="Enter your email here"/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="password"  placeholder="Enter your password here" required /></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><button>Log in</button>
+                    <ul id="customerslist"> </ul></td>
+            </tr>
+           <script>
+           $(document).ready(()=>{
+            $("button").click(()=>{
+                console.log("fetch data from REST GET api ");
+                    let appUrl="http://localhost:7777/api/customers";
+
+                    $("email").keyup(function(){
+                        var email =$("email").val();
+                        var password=$("password").val();
+
+                        $.post(appUrl, {
+                        customers : email,password
+                    },
+                        (data, status)=>{
+                        $("#email").html(data);
+status ("sucess");
+                           })
+
+              })
+
+                    })
+
+                    $.post(appUrl, (data, status)=>{
+                        for(let i=0; i<data.length;i++){
+
+                            if("#email"==data[i].email && "#password"==data[i].password  ){
+                                alert("you are login");
+                            }
+                            else{
+                                alert("please try again");
+                            }
+
+                            }
+
+              })
+               
+              });
+
+            })
+
+    
+           </script>
+
+           </table>
+            <a href="/register.html">New Customers register hare</a>
+           <!--Inline css-->
+           <p id="status" style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                   font-style:italic;
+                                    font-weight: bold;"> Welcome to This World</p>
+   </body>
+</html>

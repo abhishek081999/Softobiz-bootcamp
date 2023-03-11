@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In Web Page</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+       <!-- <script src="./scripts/app.js"></script>-->
+        <!-- we can link other external CSS, Javascript files, external fonts-->
+        <!-- links for Media Query-->
+    </head>
+
+    <body>
+        <h1 style="color: maroon">Register new Customer</h1>
+        <a href="/index.html">Home</a> | <a href="/catalog.html">Gallery</a> | <a href="/login.html">SignIn</a>
+        | <a href="/register.html">register</a>
+       
+    
+            <table>
+                <tr>
+                    <td> First name</td>
+                    <td> <input type="text" name="first"id="first" placeholder="user first name"required/></td>
+                </tr>
+                <tr>
+                    <td>Last last</td>
+                    <td> <input type="text" name="last"id="last" placeholder="user's last name"required/></td>
+                </tr>
+                
+                <tr>
+                    <td> Email</td>
+                    <td> <input type="email" name="email"id="email" placeholder="user Email"required/></td>
+                </tr>
+
+                <tr>
+                    <td> Contact</td>
+                    <td> <input type="number" name="contact"id="contact" placeholder="contact no." required/></td>
+                </tr>
+                 
+                
+                <tr>
+                    <td> Password</td>
+                    <td> <input type="password"name="password" id="password"placeholder="password" required/></td>
+                </tr>
+                <tr>
+
+                    <td>  <button type="submit">register</button></td>
+
+                </tr>
+            </table>
+
+            
+            <script>
+               
+                $(document).ready(function(){
+  $("button").click(function(){
+    let appUrl="http://localhost:7777/api/register";
+   var first=document.getElementById("first");
+   var firstname=first.value;
+   var last=document.getElementById("last");
+   var lastname=last.value;
+   var email=document.getElementById("email");
+   var firstemail=email.value;
+   var contact=document.getElementById("contact");
+   var firstcontact=contact.value;
+   var password=document.getElementById("password");
+   var firstpassword=password.value;
+    $.post(appUrl,
+    {
+      firstname:firstname ,
+      lastname:lastname,
+      email:firstemail,
+      contact:firstcontact,
+      password:firstpassword
+    },
+    function(data,status){
+       var user=JSON.stringify(data);
+      alert("Data: " + user + "\nStatus: " + status);
+    });
+  });
+})
+            </script>
+
+      
+    </body>
+</html>

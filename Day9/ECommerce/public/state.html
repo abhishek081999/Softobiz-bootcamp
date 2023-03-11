@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>State List  DHTML</title>
+    <script>
+    var status="notfilled";
+    let state = ["Maharstra", "Punjab","Haryana", "Bihar","Karnataka","TamilNadu","Kerala","Kashmir"];
+
+    let onIndiaSelceted = () => {
+        console.log("check box selected");
+        var elementCheckBox=document.getElementById("nationality");
+        if(elementCheckBox.checked==true)
+        {
+            if(status == "notfilled"){
+                for (let i = 0; i < state.length; i++) {
+                 const node = document.createElement("li");
+                 const textnode = document.createTextNode(state[i]);
+                 node.appendChild(textnode);
+                 document.getElementById("statelist").appendChild(node);
+                }
+             status ="filled";
+            }
+        }
+   
+        else{
+            // get the reference of stateList 
+            // remve all items from list
+            if(status=="filled"){
+                const list = document.getElementById("statelist");
+                for(let i = 0; i < state.length; i++) 
+                {
+                    list.removeChild(list.firstElementChild);
+                    //list.remove();   this will remove  complete list
+                     status="notfilled";
+                } 
+            }
+         }
+        }
+    
+
+
+    </script>
+</head>  
+
+<body> 
+    <table>
+           <tr>
+                <td><label>Nationality</label></td>
+                <td><input type="checkbox" name="nationality" id="nationality" onclick="onIndiaSelceted()" /> Indian</td>
+            </tr>
+            <tr>
+                <td><label>States</label></td>
+                <td><ul id="statelist"></ul></td>
+            </tr>
+        </table>
+</body>  
+</html>  

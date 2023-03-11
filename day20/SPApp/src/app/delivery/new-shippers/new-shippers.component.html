@@ -1,0 +1,27 @@
+
+
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Payment Id</th>
+        <th scope="col">Order Id</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Payment Mode</th>
+        <th scope="col">Transaction id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let payment of paymentsData; let i=index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{payment.paymentid}}</td>
+        <td>{{payment.orderid}}</td>
+        <td>{{payment.amount}}</td>
+        <td>{{payment.paymentmode}}</td>
+        <td>{{payment.transactionid}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+

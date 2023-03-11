@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Catalog</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="/index.html" >Home</a>
+        <hr/>
+        <button>Fetch all Loyal Customers</button>
+        <ul id="customerslist"> </ul>
+
+        <script>
+            //Broswers  v8 Javascript Engine
+            $(document).ready(()=>{
+                $("button").click(()=>{
+                    console.log("fetch data from REST GET api ");
+                    let appUrl="http://localhost:7777/api/customers";
+
+                    $.get(appUrl,(data,status)=>{
+                                for(let i=0; i<data.length;i++){
+                                    var listItem="<li>"+data[i].firstname + " " + data[i].lastname+ "</li>";
+                                    $("#customerslist").append(listItem);
+                                }
+                    })
+
+                })
+            })
+        </script>
+    </body>
+</html>

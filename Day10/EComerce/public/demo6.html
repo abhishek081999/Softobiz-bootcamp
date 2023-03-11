@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Web Storage Demo App</title>
+    </head>
+
+    <body>
+        <h2>Customer Details</h2>
+        <hr/>
+        <input type="text" id="firstname"/>
+        <br/>
+        <input type="text" id="lastname"/>
+        <br/>
+
+        <input type="email" id="email"/>
+        <br/>
+
+        <button onclick="onGetDetails()">Get Details...</button>
+        <script>
+            function onGetDetails(){
+                console.log("getting details");
+                let txtFirstName=document.getElementById("firstname");
+                let txtLastName=document.getElementById("lastname");
+                let txtEmail=document.getElementById("email");
+                let firstname=txtFirstName.value;
+                let lastname=txtLastName.value;
+                let email=txtEmail.value;
+                
+                let person={
+                    'firstname':firstname,
+                    'lastname':lastname,
+                    'email':email
+                };
+
+                //Store data into browser's WebStorage object
+                //LocalStorage
+                let strPerson=JSON.stringify(person);
+                localStorage.setItem("customer", strPerson);
+
+
+            };
+
+
+        </script>
+
+    </body>
+</html>

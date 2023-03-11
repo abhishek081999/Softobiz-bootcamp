@@ -1,0 +1,121 @@
+MEVN full stack (javascript)
+MERN full stack (javascript)
+MEAN full stack ( Javascript) 
+
+A: Angular
+by Google: building Single Page Application (SPA)
+Angular is a complete UI framework for building SPA 
+
+	Runtime: Node JS, java, python,C/C++ runtime,.net runtime(C#), Go 
+	Library : node_modules:fs, events, body-parse, path, http, etc
+		  Client Side Library: jQuery,React JS
+	Framework:Express JS
+			 (Web Application framework) (Server Side Framework)
+			 (MVC)
+				  session management,
+				  authentication/authorization
+				  localization (multilingual Web UI)
+				  Personalization
+				  Caching
+				  logging (Reportng)
+				  HTTP Piplines
+				  HTTP request processing
+				  HTTP response generation
+				  incomming HTTP request routing
+			
+			Front end :
+				Responsive UI Framework:
+						bootstrap
+						Stylus
+						Material UI,etc
+
+						
+			 	(Client side Javascript UI Framework)
+				  			data binding
+				  			event binding
+				  			Dynamic UI ( DOM manipulation)
+				   			UI Navigation (UI Routing)
+				   			External Data Acccess
+			           			Asynchronous data access from rest full services
+			
+
+				
+
+
+		  angular.js
+		  backbone.js
+		  knockout.js
+		  ext.js
+		   so many javascript Libraries used for building dynamic UI
+		   (2008--------------2015)
+
+		   Angular, Vue.js		
+	Application: ECommerce Portal
+
+	
+
+
+
+
+
+
+
+
+Pre-requisite:
+		node js 
+		vs code
+		npm 
+
+
+
+
+
+npm install -g angular/cli
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

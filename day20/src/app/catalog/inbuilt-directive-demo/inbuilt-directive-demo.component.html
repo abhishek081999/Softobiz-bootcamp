@@ -1,0 +1,21 @@
+
+
+<div>
+    <ol >
+        <li *ngFor="let student of students"> {{student}}</li>
+    </ol>
+</div>
+
+<hr/>
+
+<div *ngIf="isValidUser">
+    <h4>Your Order History</h4>
+    <ol>
+        <li>Order ID: 234334   rejected</li>
+        <li>Order ID: 234335   cancelled</li>
+        <li>Order ID: 234336   inprocess</li>
+        <li>Order ID: 234337   delivered</li>
+        <li>Order ID: 234338   shipped</li>
+    </ol>
+</div>
+<button (click)="toggle()">Toggle</button>

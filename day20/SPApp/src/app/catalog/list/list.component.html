@@ -1,0 +1,14 @@
+<!--<h3>Todays Fresh Flower for sale</h3>
+<ul>
+    <li><div><a>{{flowers[0].title}}</a> <button>Details</button></div> </li>
+    <li><div><a>{{flowers[1].title}}</a> <button>Details</button></div> </li>
+    <li><div><a>{{flowers[2].title}}</a> <button>Details</button></div> </li>
+    <li><div><a>{{flowers[3].title}}</a> <button>Details</button></div> </li>
+    <li><div><a>{{flowers[4].title}}</a> <button>Details</button></div> </li>
+</ul>
+--->
+
+
+<div *ngFor="let flower of flowers">
+    <app-details [product]="flower"></app-details>
+</div>

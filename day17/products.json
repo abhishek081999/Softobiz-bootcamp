@@ -1,0 +1,12 @@
+[{ "productID":1,"title":"Flower","picture":"flower.jpg","category":"flowers", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+    { "productID":2,"title":"chair","picture":"chair.jpg","category":"chairs", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+    { "productID":3,"title":"Table","picture":"Table.jpg","category":"tables", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+    { "productID":4,"title":"Phone","picture":"Phone.jpg","category":"phone", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+{ "productID":5,"title":"Telivision","picture":"Telivision.jpg","category":"telivision", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+{ "productID":6,"title":"Cable","picture":"Cable.jpg","category":"Cables", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+{ "productID":7,"title":"Clock","picture":"Clock.jpg","category":"Clocks", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+{ "productID":8,"title":"Cycle","picture":"Cycle.jpg","category":"Cycles", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered" },
+{"productID":9,"title":"Chair","picture":"Chair.jpg","category":"Chairs", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered"},
+{"productID":9,"title":"Blanket","picture":"Blanket.jpg","category":"Blanket", "description":"wonderful ","price":100, "quantity":2,"paymentTerm":"procede","delivery":"delivered"}
+
+]

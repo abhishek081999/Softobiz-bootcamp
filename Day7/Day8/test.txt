@@ -1,0 +1,52 @@
+REST api:
+
+Product catalog:
+	Product :
+		 id, title, description,
+		 quantity, unitprice, 
+	         imagerul
+
+	insert
+	update
+	delete
+	getall
+	getbyId
+
+
+20 Marks:
+Duration:45 minutes
+rest api:
+data: cart.json
+	[ {"productid":1, quantity:5},
+	  {"productid":8, quantity:15},
+	  {"productid":3, quantity:55},	
+	]
+
+Shopping Cart Implementation:
+	item:
+	     productid,
+	     quantity
+	addtocart( Item)
+	removefromcart(productId)
+	getallItems
+	
+GET
+http://localhost:9090/api/cart/
+return all items available in cart
+
+Post
+http://localhost:9090/api/cart/addtocart
+body :  {"productid":1, quantity:5},
+
+Put
+http://localhost:9090/api/cart/update/1
+body :  {"productid":1, quantity:98},
+ 
+DELETE
+http://localhost:9090/api/cart/removefrom/21
+
+
+
+
+
+

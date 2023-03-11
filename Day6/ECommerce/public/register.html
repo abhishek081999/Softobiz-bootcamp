@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In Web Page</title>
+        <!-- we can link other external CSS, Javascript files, external fonts-->
+        <!-- links for Media Query-->
+    </head>
+
+    <body>
+        <h3>Register new Customer</h3>
+        <a href="/index.html">Home</a>| <a href="/catalog.html">Gallery</a>| <a href="/login.html">SignIn</a>
+
+        <form method="post" action="/api/register">
+            <table>
+                <tr>
+                    <td> First Name</td>
+                    <td> <input type="text" name="firstname" required/></td>
+                </tr>
+                <tr>
+                    <td> Last Name</td>
+                    <td> <input type="text" name="lastname" required/></td>
+                </tr>
+
+                <tr>
+                    <td> Location</td>
+                    <td> <input type="text" name="location" required/></td>
+                </tr>
+
+                <tr>
+                    <td> Contact Number</td>
+                    <td> <input type="text" name="contact number" required/></td>
+                </tr>
+                <tr>
+                    <td> Email</td>
+                    <td> <input type="email"name="email"  required/></td>
+                </tr>
+                <tr>
+                    <td> Password</td>
+                    <td> <input type="password"name= "password"  required/></td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td>  <button>Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

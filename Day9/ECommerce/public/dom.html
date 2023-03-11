@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECommerce Portal</title>
+
+       
+       
+    </head>
+    <body>
+        <h1>Transflower Store</h1>
+        <button id="pushbutton">push me</button>
+
+
+       <input type="checkbox" name="toggle" id="toggle" onclick="onToggle()" /> 
+        <p id="para1">Welcome to Transflower</p>
+ 
+        <script>
+            var doSomething=function(){
+                console.log("document is clicked...");
+            }    
+
+            var pushMe=function(){
+                console.log("someone pushed me.....")
+            };
+
+           // document.addEventListener("click",doSomething);      
+            var onToggle=function(){
+                var checkbox=document.getElementById("toggle");
+                if(checkbox.checked== true){
+                    //attach event handler
+
+                    //Dynamic event Binding 
+                    var btn=document.getElementById("pushbutton");
+                    btn.addEventListener("click",pushMe);
+                }
+                else{
+                    //Detach click event handler
+                    
+                    var btn=document.getElementById("pushbutton");
+                    btn.removeEventListener("click",pushMe);
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert Product Details</title>
+        <!-- we can link other external CSS, Javascript files, external fonts-->
+        <!-- links for Media Query-->
+    </head>
+
+    <body>
+        <h3>Product Details</h3>
+        <a href="/aboutus.html">About us</a> | <a href="/catalog.html">Catalog</a>|
+        <a href="/register.html">Register Now</a> | <a href="/login.html">Login</a>|
+        <a href="/insert.html">ProductDetail</a>
+
+        <form method="Post" action="/api/insert">
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td> <input type="text" name="id" required/></td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td> <input type="text" name="title" required/></td>
+                </tr>
+
+                <tr>
+                    <td>Description</td>
+                    <td> <input type="text" name="description" required/></td>
+                </tr>
+
+                <tr>
+                    <td>UnitPrice</td>
+                    <td> <input type="text" name="price" required/></td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td> <input type="text" name="quantity" required/></td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td>  <button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

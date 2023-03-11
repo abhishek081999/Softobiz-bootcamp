@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script></script>
+
+    </head>
+    <body>
+       <h1>Object and classes</h1>>
+       <script>
+        let person={
+
+            "firstname":"Sameer",
+
+            "lastname":"Jadhav",
+
+            "location": "Mumbai"
+
+        };
+       
+        class Product{
+
+//only one constructor is allowd in Javascript
+
+// is to perform Dependency Injection (DI)
+
+constructor(name, data, price){
+
+    this.title=name;  //instance variable
+
+    this.description=data; //variable
+
+    this.unitPrice=price;
+
+}
+
+
+
+// initialize(name, data, price){
+
+//     this.title=name;  //instance variable
+
+//     this.description=data; //variable
+
+//     this.unitPrice=price;
+
+// }    
+
+sell(){
+
+    console.log(this.title + " is available");
+
+}
+
+update(newTitle, newPrice){
+
+    this.title=newTitle;
+
+    this.unitPrice=newPrice;
+
+}
+
+}
+
+//flower1 is reference to instance
+
+        // Product is blue print
+
+        //
+
+ let flower1=new Product("Gerbera", 6,"Wedding flower");  // constructor DI
+
+   // console.log(flower1.title);
+
+// flower1.initialize("Gerbera", 6,"Wedding flower"); // Method DI
+
+    let flower2=new Product("Gerbera", 6,"Wedding flower");
+
+// flower2.initialize("Rose", 10,"Valentine flower");
+
+    console.log(flower1.title);
+
+    console.log(flower2.title);
+       
+
+
+
+        </script>
+    </body>
+    
+
+</html>

@@ -1,0 +1,18 @@
+<h1>Inbuilt Pipes provided by Angular</h1>
+<h3>
+
+    {{person}} <br/>
+    {{person|json}} <br/>
+    Date: {{ dateToday  }} <br>
+    Date Pipe: {{ dateToday | date | uppercase}}<br>
+    Date Pipe: {{ dateToday | date: 'short' | lowercase}} <br>
+    Name: {{ name | uppercase}} <br>
+    Name: {{ name | slice:2}}
+    <br/>
+        Price: {{price|currency : "INR" }}
+    <hr/>
+    <p>A: {{price | currency}}</p>
+
+</h3>
+
+

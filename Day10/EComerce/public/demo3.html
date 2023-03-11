@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>  
+    </head>
+    <body>
+        <h2> Invoking reusable module</h2>
+        <script type="module">
+            import {firstName, lastName, contactNumber, Customer } from "./scripts/crm.js";
+            let result="Welcome123";
+            console.log(firstName+ " " + lastName);
+
+            let  cust1=new Customer("Rajan", "Patil", "9774758971");
+            let fullname=cust1.FullName;
+            console.log(fullname);
+
+        </script>
+    </body>
+</html>

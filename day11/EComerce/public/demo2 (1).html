@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>  
+    </head>
+    <body>
+        <h2> Product Inheritance</h2>
+        <script>
+         class Product{
+            constructor(name, data, price){
+                this.title=name;   
+                this.description=data;  
+                this.unitPrice=price;
+            } 
+            view(){
+                return 'Prouct details: ' + this.title + "  "+ this.description + " "+ this.unitPrice;
+            }
+        }
+
+        class Vehicle extends Product{
+            constructor(name, data, price, brand){
+               super(name, data,price);
+                this.brand=brand;  // declare data member and initialize
+            }
+            get make(){
+                    return this.brand;
+            }
+            set make(creator){
+                if(creator != "TATA")
+                { throw "Invalid brand;" }
+                else
+                {this.brand=creator; } 
+            }
+            static testMethod(){
+                return  "Vechicle shared services.....";
+            }
+            display(){
+                return  this.view() + " " + this.brand;
+            }
+        }
+
+        let nano=new Vehicle("Nano", "People Car",100000,"TATA");
+        let zen=new Vehicle("Maruti Zen", "Best Car",600000, "Maruti");
+        let resultNano=nano.display();  // member functions
+        let resultZen=zen.display();    //member functions
+        console.log(resultNano);
+        console.log(resultZen);
+       // nano.brand="FIAT";
+        nano.make="FIAT";  // smart field
+                          // when you change property
+                          //FIAT will be passed to 
+                          //setter function of make property
+        let maker=nano.make;
+
+        console.log(maker);
+        console.log(Vehicle.testMethod()); // static function/ shared function, class function.
+
+        </script>
+    </body>
+</html>
